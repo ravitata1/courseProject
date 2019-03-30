@@ -2,9 +2,12 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Welcome Page</title>
+	<script type="text/javascript" src="script.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Welcome Page</title>
 </head>
 
 
@@ -18,12 +21,13 @@
 
 <h1> ${message} Welcome </h1>
 
-<a href="shop.jsp">Shop</a>
-
-<a href="addBook.jsp">Add a book</a>
-
-	<a href="logout.jsp">Logout</a>
-	
+<div class="nav-bar">
+		<ul class="nav">
+			<li><a href="shop.jsp">Browse Books</a></li>
+			<li><a href="shop.jsp">Update Books</a></li>
+			<li><a href="logout.jsp">Logout</a></li>
+		</ul>
+	</div>
 
 </body>
 </div>
