@@ -8,6 +8,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Admin Page</title>
 </head>
+
+<link rel="stylesheet" href="login.css" type="text/css">
+
+
+<div id="container">
+
+
+
 <body>
 	
 	<%out.print("Hello!"); %>
@@ -19,22 +27,47 @@
 		if(conn == null)
 			out.print("connection failed");
 		else
-			out.print("Please enter the information for the book you would like to add");
-	
+			out.print("Please enter the information for the book you would like to add or remove..");
 	%>
+	
+	
 	<form name="addBookForm" action="addBook" method="post" onsubmit="return loginValidate()">
 	<br>
 	${message}<br>
 	${successMessage}<br>
-	Book Name: <input type="text" name="title"><br>
 	
-	Author: <input type="text" name="author"><br>
 	
-	ISBN: <input type="text" name="ISBN"><br>
-	<!--Price: <input type="number" name="price" id="price"><br>-->
-	<input type="submit" name="submit" value="submit"><br>
-	<a href="welcome.jsp">Homepage</a>
+	
+	<table border = "0">
+	
+ 	 <tr align="left" valign="top">
+ 	 	<td>Book Title:</td>
+  			<td><input type="text" name="title" /></td>
+	 </tr>
+	 
+	 
+	 <tr align="left" valign="top">
+	   <td>Author Name:</td>
+ 		 <td><input type="text" name ="author"/></td>
+ 	 </tr>
+ 	 
+ 	 <tr align="left" valign="top">
+	   <td>ISBN</td>
+ 		 <td><input type="text" name ="ISBN"/></td>
+ 	 </tr>
+
+	
+	<tr align="left" valign="top">
+		<td> 
+  			<input type="submit" name="submit" value="submit" /> 
+  			<input type="submit" name="submit" value="remove" /> 
+  		</td>
+  	</tr>
+	
+
+ 	</table>
+	
 	</form>
-	
+</div>
 </body>
 </html>
