@@ -20,22 +20,30 @@
 <div id="header">
 		<h1>Administrator Login</h1>
 </div>
-
-	<%--
-		DbManager db = new DbManager();
-		Connection conn = (Connection) db.getConnection();
-		if(conn == null)
-			out.print("failed");
-		else
-			out.print("succeeded");
 	
-	--%>
+	<br><br>
 	
-	<br>
-	<br>
-	Username: <input type="text" name="admin" id="admin"><br>
-	Password: <input type="password" name ="password" id="password"><br>
-	<input type="submit" name="submit" value="Sign in"><br>
+	
+	<table border = "0">
+	
+ 	 <tr align="left" valign="top">
+ 	 	<td>Usename:</td>
+  			<td><input type="text" name ="admin" id="admin"/></td>
+	 </tr>
+	 
+	 <tr align="left" valign="top">
+	   <td>Password:</td>
+ 		 <td><input type="password" name ="password" id="password"/></td>
+ 	 </tr>
+ 	 
+ 	 
+ 	 <tr align="left" valign="top">
+		<td> 
+  			<input type="submit" name="submit" value="login" /> 
+  		</td>
+  	</tr>
+	
+	</table>
 	
 </body>
 </div>
