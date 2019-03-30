@@ -24,19 +24,23 @@
 <form name="regform" action="LoginController" method="post" onsubmit="return regValidate()">
 	<br>${message}<br>
 	
-	Username: <input type="text" name="username"> <br>
-	<div id="username_error"></div><br>
-	Customer name: <input type="text" name="name"><br>
 	
-	Password: <input type="password" name="password" id="password"> 
+	First name: <input type="text" name="name"><br>
+	Last name:  <input type="text" name="lastName"><br><br>
+	Username: 	<input type="text" name="username">
+	<div id="username_error"></div>
+	
+	Password: 	<input type="password" name="password" id="password"> 
 	<br>
 	Re-Type Password: <input type="password" name="retry-password" id="retry-password"> 
 	<br>
+	
+	
 	<div id="password_error"></div><br>
 	<input type="submit" name="submit" value="register" >
 	<input type="reset" name="reset">
 	
-	</form>
+</form>
 	
 </body>
 </div>
