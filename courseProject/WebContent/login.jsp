@@ -17,42 +17,60 @@
 
 
 <div id="container">
+
 	<body>
-
 		<div id="header">
-		<h1>  Welcome to Group 9 Bookstore!</h1>
-</div>
+			<h1>  Welcome to Group 9 Bookstore!</h1>
+		</div>
 
-<div class="nav-bar">
+	<div class="nav-bar">
 		<ul class="nav">
 			<li><a href="register.jsp">Account Registration</a></li>
 			<li><a href="shop.jsp">Browse</a></li>
 			<li><a href="adminLogin.jsp">Admin Portal</a></li>
 		</ul>
-</div>
+	</div>
 
 
-<div id="content">
-	<br>
+	<div id="content">
+		<br>
 	
-	<%out.print("Please sign-in or register below.."); %>
+		<%out.print("Please sign-in or register below.."); %>
 
+		<%-- ! int number1, number2; --%>
 	
-	<%-- ! int number1, number2; --%>
+		<br/>
 	
-	<br/>
-	
-	<form name="loginform" action="LoginController" method="post" onsubmit="return loginValidate()" > <br>
-	<%-- ${message}  --%>
-	<%--  ${successMessage}<br>   --%>
-	
+		<form name="loginform" action="LoginController" method="post" onsubmit="return loginValidate()" > <br>
+			<%-- ${message}  
+			${successMessage}<br>   --%>
 	</div>
 	
-	Username: <input type="text" name="username" id="username"><br>
-	Password: <input type="password" name="password" id="password"><br>
-	<input type="submit" name="submit" value="login"><br>
+	
+	<table border = "0">
+	
+ 	 <tr align="left" valign="top">
+ 	 	<td>Usename:</td>
+  			<td><input type="text" name ="username" id="username"/></td>
+	 </tr>
+	 
+	 
+	 <tr align="left" valign="top">
+	   <td>Password:</td>
+ 		 <td><input type="password" name ="password" id="password"/></td>
+ 	 </tr>
 
-	</form>
+	
+	<tr align="left" valign="top">
+		<td> 
+  			<input type="submit" name="submit" value="login" /> 
+  		</td>
+  	</tr>
+	
+	<%-- <input type="submit" name="submit" value="login"><br>  --%>
+
+ 	</table>
+ 	</form> 
 	
 </body>
 </div>
