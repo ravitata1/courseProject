@@ -67,7 +67,6 @@
   		</td>
   	</tr>
 	
-	<%-- <input type="submit" name="submit" value="login"><br>  --%>
 
  	</table>
  	</form> 
