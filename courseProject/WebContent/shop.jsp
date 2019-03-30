@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>Shopping Page</title>
@@ -13,7 +14,17 @@
 <div id="container">
 
 <body>
-<h1>All Books</h1>
+		<div id="header">
+			<h1>All Books</h1>
+		</div>
+		
+		<div class="nav-bar">
+		<ul class="nav">
+			<li><a href="welcome.jsp">Home</a></li>
+			<li><a href="checkout.jsp">Checkout</a></li>
+			<li><a href="logout.jsp">Logout</a></li>
+		</ul>
+		</div>
 
 
 
