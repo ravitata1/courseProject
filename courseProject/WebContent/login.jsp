@@ -37,13 +37,11 @@
 	
 		<%out.print("Please sign-in or register below.."); %>
 
-		<%-- ! int number1, number2; --%>
 	
 		<br/>
 	
 		<form name="loginform" action="LoginController" method="post" onsubmit="return loginValidate()" > <br>
-			<%-- ${message}  
-			${successMessage}<br>   --%>
+
 	</div>
 	
 	
