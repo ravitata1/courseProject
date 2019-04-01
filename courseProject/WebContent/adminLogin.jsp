@@ -19,6 +19,8 @@
 
 <div id="header">
 		<h1>Administrator Login</h1>
+		
+		<form name="loginform" action="AdminController" method="post" onsubmit="return loginValidate()" > <br>
 </div>
 	
 	<br><br>
@@ -27,13 +29,13 @@
 	<table border = "0">
 	
  	 <tr align="left" valign="top">
- 	 	<td>Usename:</td>
-  			<td><input type="text" name ="admin" id="admin"/></td>
+ 	 	<td>Username:</td>
+  			<td><input type="text" name ="user" id="user"/></td>
 	 </tr>
 	 
 	 <tr align="left" valign="top">
 	   <td>Password:</td>
- 		 <td><input type="password" name ="password" id="password"/></td>
+ 		 <td><input type="password" name ="pass" id="pass"/></td>
  	 </tr>
  	 
  	 
