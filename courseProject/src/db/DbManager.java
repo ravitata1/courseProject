@@ -8,6 +8,7 @@ import java.sql.DriverManager;
  * getConnection method help us to connect to the appropriate database. In this project we only have one
  * database. Data comes from MyDB interface.
  */
+
 public class DbManager implements MyDB{
 
 	public Connection getConnection(){
@@ -21,3 +22,4 @@ public class DbManager implements MyDB{
 		}
 	}
 }
+
