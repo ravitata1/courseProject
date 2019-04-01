@@ -31,7 +31,7 @@ public class AdminController extends HttpServlet {
 		
 		if(submitType.equals("login") && a!=null && a.getName()!=null){
 			request.setAttribute("message", "Hello "+a.getName() + ",");
-			request.getRequestDispatcher("welcome.jsp").forward(request, response);
+			request.getRequestDispatcher("adminWelcome.jsp").forward(request, response);
 		}	
 		else{
 			request.setAttribute("message", "Data Not Found! Please try again.");
