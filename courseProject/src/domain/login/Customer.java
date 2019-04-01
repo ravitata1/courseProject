@@ -4,6 +4,7 @@ package domain.login;
  * @author mehra
  *
  */
+
 public class Customer {
 
 	private String username;
@@ -30,3 +31,4 @@ public class Customer {
 
 	
 }
+
