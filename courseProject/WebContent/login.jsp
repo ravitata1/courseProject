@@ -21,62 +21,72 @@
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="login.css" type="text/css">
 
-		<div id="header">
-			<h1>  Welcome to Group 9 Bookstore!</h1>
-		</div>  
+	<div style="background: url(https://www.heet.org.uk/wp-content/uploads/2016/06/gradient-background-26046-26731-hd-wallpapers.jpg.png) !important" class="jumbotron">
+		<div class="text-center">
+			<font size="5" color=#ebf1ed> <h1>Welcome to Group 9 Bookstore </h1> </font>
+			<font size="3" color=#ebf1ed> <p>"A book is a dream that you can hold in your hand" - Neil Gaiman</p> </font>
+	</div>
+	</div>
 		
+	<div id="container">
 
-
-<div id="container">
-
-	<body>	
-
-	<div class="nav-bar">
+	<body>
+	
+	
+			<%-- <div class="nav-bar">  --%>
+		
+		<nav class="navbar sticky-top navbar-light bg-dark">
 		<ul class="nav">
-			<li><a href="register.jsp">Account Registration</a></li>
-			<li><a href="browse.jsp">Browse</a></li>
-			<li><a href="adminLogin.jsp">Admin Portal</a></li>
+			<li><a class="navbar-brand" href="register.jsp">Account Registration</a></li>
+			<li><a class="navbar-brand" href="browse.jsp"> Browse</a></li>
+			<li><a class="navbar-brand" href="adminLogin.jsp"> Admin Portal</a></li>
+			
 		</ul>
-	</div>
+		</ul>
+		</nav>	  
+	
 
-
+	<div class="text-center">
+	
 	<div id="content">
-		<br>
-	
-		<%out.print("Please sign-in or register below.."); %>
-
-	
-		<br/>
-	
-		
-
+		<br> <%out.print("Please sign-in or register below.."); %> <br/>
 	</div>
+	
+
 	<form name="loginform" action="LoginController" method="post" onsubmit="return loginValidate()" > <br>
 	
-	<table border = "0">
-	
- 	 <tr align="left" valign="top">
- 	 	<td>Username:</td>
-  			<td><input type="text" name ="username" id="username"/></td>
-	 </tr>
-	 
-	 
-	 <tr align="left" valign="top">
-	   <td>Password:</td>
- 		 <td><input type="password" name ="password" id="password"/></td>
- 	 </tr>
+	<%--	<table border = "0">  --%>
+ 		 <tr align="center" valign="top">
+ 		 	<td>Username:</td>
+  			<td><input type="text" name ="username" id="username"/></td><br><br>
+		 </tr>
+		 
+	  
+		 <tr align="center" valign="top">
+		   <td>Password:</td>
+ 		 	<td><input type="password" name ="password" id="password"/></td><br><br>
+ 		 </tr>
 
-	
-	<tr align="left" valign="top">
-		<td> 
+		<tr align="center" valign="top">
+			<td> 
   			<input type="submit" name="submit" value="login" /> 
-  		</td>
-  	</tr>
+  			</td>
+  		</tr><br><br>
+  	
+  	<tr align="center" valign="top">
+		   <font size="2"><td><a href="register.jsp">Don't have an account? Register here!</a></td></font>
+		   
+ 		 </tr>
 	
 
- 	</table>
+ <%--	</table> --%>
  	</form> 
+ 	
+ 	</div>
+ 
 	
 </body>
 </div>
+
+
 </html>
