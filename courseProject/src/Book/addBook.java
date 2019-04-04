@@ -1,3 +1,4 @@
+//needed packages and import statements
 package Book;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/addBook")
 public class addBook extends HttpServlet {
+	//instance variables
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doPost(request, response);
@@ -20,6 +22,7 @@ public class addBook extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		//initiates variables for BookDao object
 		BookDao bdao = new BookDaoImpl();
 		String title = request.getParameter("title");
 		String author = request.getParameter("author");
