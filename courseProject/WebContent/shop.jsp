@@ -15,7 +15,7 @@
 
 <body>
 		<div id="header">
-			<h1>All Books</h1>
+			<h1>Shop Books</h1>
 		</div>
 		
 		<div class="nav-bar">
