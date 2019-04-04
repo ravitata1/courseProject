@@ -13,20 +13,28 @@
 </head>
 
 
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-reboot.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="login.css" type="text/css">
+
+		<div id="header">
+			<h1>  Welcome to Group 9 Bookstore!</h1>
+		</div>  
+		
 
 
 <div id="container">
 
-	<body>
-		<div id="header">
-			<h1>  Welcome to Group 9 Bookstore!</h1>
-		</div>
+	<body>	
 
 	<div class="nav-bar">
 		<ul class="nav">
 			<li><a href="register.jsp">Account Registration</a></li>
-			<li><a href="shop.jsp">Browse</a></li>
+			<li><a href="browse.jsp">Browse</a></li>
 			<li><a href="adminLogin.jsp">Admin Portal</a></li>
 		</ul>
 	</div>
@@ -40,15 +48,15 @@
 	
 		<br/>
 	
-		<form name="loginform" action="LoginController" method="post" onsubmit="return loginValidate()" > <br>
+		
 
 	</div>
-	
+	<form name="loginform" action="LoginController" method="post" onsubmit="return loginValidate()" > <br>
 	
 	<table border = "0">
 	
  	 <tr align="left" valign="top">
- 	 	<td>Usename:</td>
+ 	 	<td>Username:</td>
   			<td><input type="text" name ="username" id="username"/></td>
 	 </tr>
 	 
