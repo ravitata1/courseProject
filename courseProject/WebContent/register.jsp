@@ -23,9 +23,11 @@
 
 <body>
 
-<div id="header">
-		<h1>Account Registration</h1>
-</div>
+	<div style="background: url(https://www.heet.org.uk/wp-content/uploads/2016/06/gradient-background-26046-26731-hd-wallpapers.jpg.png) !important" class="jumbotron">
+		<div class="text-center">
+			<font size="5" color=#ebf1ed> <h1>Account Registration</h1> </font>
+		</div>
+	</div>
 
 <form name="regform" action="LoginController" method="post" onsubmit="return regValidate()">
 
