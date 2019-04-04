@@ -6,10 +6,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Admin Page</title>
+<title>Add Book Page</title>
 </head>
 
+
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-reboot.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 <link rel="stylesheet" href="login.css" type="text/css">
+
 
 
 <div id="container">
@@ -33,8 +41,13 @@
 	
 	<form name="addBookForm" action="addBook" method="post" onsubmit="return loginValidate()">
 	<br>
-	${message}<br>
-	${successMessage}<br>
+	
+
+	<font size="3" color="green">${yesMessage}</font>
+  	<font size="3" color="red">${noMessage}</font>
+  	<font size="3" color="green">${successMessage}</font>
+  	<br>
+	
 	
 	
 	
