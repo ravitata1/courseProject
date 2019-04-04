@@ -31,13 +31,12 @@ public class addBook extends HttpServlet {
 //		b.setPrice(price);
 		bdao.register(b);
 		if(submitType.equals("submit") && b!=null && b.getTitle()!=null && b.getAuthor()!=null && b.getISBN()!=null){ 
-			request.setAttribute("message", b.getTitle() +" by " + b.getAuthor()+ " (ISBN: "+b.getISBN() + ") has been added successfully!");
+			request.setAttribute("yesMessage", b.getTitle() +" by " + b.getAuthor()+ " (ISBN: "+b.getISBN() + ") has been added successfully!");
 			request.getRequestDispatcher("addBook.jsp").forward(request, response);
 			
 		}
 		else{
-		
-		request.setAttribute("message", b.getISBN() + "Unsuccessful entry. Please try again (make sure to fill out all fields)");
+		request.setAttribute("noMessage", b.getISBN() + "Unsuccessful entry. Please try again (make sure to fill out all fields)");
 		request.getRequestDispatcher("addBook.jsp").forward(request, response);
 			}
 	}
