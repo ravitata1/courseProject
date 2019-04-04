@@ -9,9 +9,12 @@ import java.sql.DriverManager;
  * database. Data comes from MyDB interface.
  */
 
+//defines Manager object
 public class DbManager implements MyDB{
 
+	//connects to the database
 	public Connection getConnection(){
+		//try-catch statement in the event that the login credentials are invalid or connection fails for whatever reason
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection myConnection = DriverManager.getConnection(CONN_URL,USER,PASS);
