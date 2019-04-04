@@ -24,10 +24,11 @@ public class addBook extends HttpServlet {
 		String title = request.getParameter("title");
 		String author = request.getParameter("author");
 		String isbn = request.getParameter("ISBN");
+		String link = request.getParameter("link");
 		
 		//double price = Double.parseDouble(request.getParameter("price"));
 		String submitType = request.getParameter("submit");
-		Book b = new Book(title, author, isbn, 0);
+		Book b = new Book(title, author, isbn, link);
 //		b.setPrice(price);
 		bdao.register(b);
 		if(submitType.equals("submit") && b!=null && b.getTitle()!=null && b.getAuthor()!=null && b.getISBN()!=null){ 

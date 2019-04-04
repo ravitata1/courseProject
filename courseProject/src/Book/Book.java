@@ -5,11 +5,14 @@ public class Book {
 	private String ISBN;
 	private double price;
 	private String author;
-	public Book(String t, String a, String i, double p){
+	private String link;
+	
+	public Book(String t, String a, String i, String l){
 		title = t;
 		author = a;
 		ISBN = i;
-		price = p;
+		// price = p;
+		link = l;
 	}
 	public void setTitle(String t)
 	{
@@ -42,5 +45,13 @@ public class Book {
 	public double getPrice()
 	{
 		return price;
+	}
+	public void setLink(String l)
+	{
+		link = l;
+	}
+	public String getLink()
+	{
+		return link;
 	}
 }

@@ -4058,6 +4058,7 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  text-align: center;
 }
 
 .nav-link {
@@ -4177,6 +4178,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  text-color: white;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {
@@ -5084,9 +5086,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem; 
-  margin-bottom: 2rem;
-  background-color: #e9ecef;
+  padding: 1rem 1rem; 
+  margin-bottom: 0;
+  background-color: #ff9d44;
   border-radius: 0.3rem;
 }
 
@@ -5100,7 +5102,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 @media (min-width: 576px) {
   .jumbotron {
-    padding-bottom: 0; // or whatever you want the value to be, such as 1rem.
+    padding-bottom: 1rem; // or whatever you want the value to be, such as 1rem.
 }
 
 .jumbotron-fluid {

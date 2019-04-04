@@ -65,9 +65,14 @@
  	 </tr>
  	 
  	 <tr align="left" valign="top">
-	   <td>ISBN</td>
+	   <td>ISBN:</td>
  		 <td><input type="text" name ="ISBN"/></td>
  	 </tr>
+ 	 
+ 	 <tr align="left" valign="top">
+ 	 	<td>Image Link:</td>
+  			<td><input type="text" name="link" /></td>
+	 </tr>
 
 	
 	<tr align="left" valign="top">

@@ -24,6 +24,7 @@ public class BookDaoImpl implements BookDao{
 		ps.setString(1, b.getTitle());
 		ps.setString(2, b.getAuthor());
 		ps.setString(3, b.getISBN());
+		ps.setString(5, b.getLink());
 			
 		//	ps.setDouble(4, b.getPrice());
 		

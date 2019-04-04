@@ -22,4 +22,3 @@ public class DbManager implements MyDB{
 		}
 	}
 }
-
