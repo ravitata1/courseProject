@@ -19,12 +19,13 @@
 <body>
 
 
-<h1> ${message} Welcome </h1>
+<h1> ${message} welcome </h1>
 
 <div class="nav-bar">
 		<ul class="nav">
 			<li><a href="shop.jsp">Browse Books</a></li>
 			<li><a href="addBook.jsp">Update Books</a></li>
+			<li><a href="addAdmin.jsp" > Update Admins</a>
 			<li><a href="logout.jsp">Logout</a></li>
 		</ul>
 	</div>
