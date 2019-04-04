@@ -4,6 +4,8 @@
 Base styles
 ------------------------*/
 
+
+
 body
 {
 	margin: 0;
@@ -97,6 +99,15 @@ Layout styles
 	padding: 0;
 }
 
+.nav-bars{
+	background: #000;
+	padding: 0;
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
 .content { padding: 1em 1.25em; }
 
 .footer
@@ -161,7 +172,7 @@ Single styles
 
 .btn
 {
-	color: #fff !important;
+	color: #ff5f1b !important;
 	background-color: royalblue;
 	border-color: #222;
 	display: inline-block;
@@ -222,6 +233,12 @@ Single styles
 	padding-right: 5px;
 	padding-left: 5px;
 }
+
+img.resize {
+  width:175px;
+  height:275px;
+}
+
 
 /* -----------------------
 Wide styles
