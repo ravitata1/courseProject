@@ -20,6 +20,7 @@
 
 <div id="container">
 
+	<%--formats pages properly--%>
 <body>
 	<div style="background: url(https://www.heet.org.uk/wp-content/uploads/2016/06/gradient-background-26046-26731-hd-wallpapers.jpg.png) !important" class="jumbotron">
 		<div class="text-center">
@@ -36,7 +37,7 @@
 		</nav>
 		
 		
-		
+		<%--displays table with available books in the database--%>
 <table border="1" align="center" width="70%">
 	<tr> <br>
 		<td><img class="resize" src="https://shortlist.imgix.net/app/uploads/2012/06/24225141/the-50-coolest-book-covers-8.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress" alt="">
