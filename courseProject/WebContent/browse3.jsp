@@ -36,7 +36,7 @@
 		</nav>
 		
 		
-		
+		<%--displays websites in a formatted table--%>
 <table border="1" align="center" width="70%">
 	<tr> <br>
 		<td><img class="resize" src="https://shortlist.imgix.net/app/uploads/2012/06/24225141/the-50-coolest-book-covers-8.jpg?w=1200&h=1&fit=max&auto=format%2Ccompress" alt="">
@@ -87,6 +87,7 @@
 </body>
 </div>
 
+	<%--formats appropriately--%>
 <br><br>
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
