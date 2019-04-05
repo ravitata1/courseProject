@@ -24,6 +24,7 @@
 <div id="container">
 
 <body>
+	<%--formats login screen appropriately--%>
 
 	<div style="background: url(https://www.heet.org.uk/wp-content/uploads/2016/06/gradient-background-26046-26731-hd-wallpapers.jpg.png) !important" class="jumbotron">
 		<div class="text-center">
@@ -38,7 +39,7 @@
 	
 	
 	<table border = "0">
-	
+	<%--prompts for login credentials--%>
  	 <tr align="left" valign="top">
  	 	<td>Username:</td>
   			<td><input type="text" name ="user" id="user"/></td>
