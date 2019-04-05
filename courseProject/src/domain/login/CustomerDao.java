@@ -11,11 +11,13 @@ public interface CustomerDao {
 	 * @param c
 	 * @return
 	 */
+	//registers customer into the database
 	public int register(Customer c);
 	
 	/*
 	 * Retrieve the Customer object from the database
 	 */
+	//validates customer's login credentials
 	public Customer validateCustomer(Login login);
 
 	
