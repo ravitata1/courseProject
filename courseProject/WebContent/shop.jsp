@@ -35,7 +35,7 @@
 		</ul>
 		</nav>
 		
-				
+		<%--posts images of books available in database and scales them accordingly--%>		
 <table border="1" align="center" width="70%">
 	<tr> <br>
 		<td><img class="resize" src="https://images-na.ssl-images-amazon.com/images/I/51v1aAlA9xL._SX318_BO1,204,203,200_.jpg" alt="">
