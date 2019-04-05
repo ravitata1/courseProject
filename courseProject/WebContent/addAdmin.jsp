@@ -22,9 +22,11 @@
 	<%out.print("Hello!"); %>
 	
 	
+	<%--new DBManager object instantiated and connection to database established--%>
 	<%
 		DbManager db = new DbManager();
 		Connection conn = (Connection) db.getConnection();
+		<%--tests if connection fails--%>
 		if(conn == null)
 			out.print("connection failed");
 		else
@@ -38,7 +40,7 @@
 	${successMessage}<br>
 	
 	
-	
+	<%--formatting page properly--%>
 	<table border = "0">
 	
  	 <tr align="left" valign="top">
