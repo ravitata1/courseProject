@@ -40,7 +40,7 @@
   			<td><input type="text" name ="name"/></td>
 	 </tr>
 	 
-	 
+	 <%--prompts for needed information and inputs them into the database for registration--%>
 	 <tr align="left" valign="top">
 	   <td>Last name:</td>
  		 <td><input type="text" name ="lastName"/></td>
