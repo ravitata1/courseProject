@@ -28,10 +28,11 @@
 	
 	<%out.print("Hello!"); %>
 	
-	
+	<%-- creates new DbManager object and establishes a connection to the database--%>
 	<%
 		DbManager db = new DbManager();
 		Connection conn = (Connection) db.getConnection();
+		<%--tests if connection was successful--%>
 		if(conn == null)
 			out.print("connection failed");
 		else
