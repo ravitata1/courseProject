@@ -1,3 +1,4 @@
+//packages and import statements
 package domain.login;
 
 import java.sql.Connection;
@@ -10,11 +11,13 @@ import db.DbManager;
 
 public class AdminDaoImpl implements AdminDao {
 
+	//objects instantiated
 	static Connection conn;
 	static PreparedStatement ps;
 	DbManager db = new DbManager();
 	
 	
+	//registers an Admin object
 	@Override
 	public int register(Admin a) {
 		int status = 0;
@@ -34,6 +37,7 @@ public class AdminDaoImpl implements AdminDao {
 	
 	
 
+	//validates Admin login credentials
 	@Override
 	public Admin validateAdmin(AdminLogin login) {
 		Admin a = new Admin();
