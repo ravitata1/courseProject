@@ -30,7 +30,7 @@
 	</div>
 
 
-
+<%--portrays welcome page with prompts for various actions--%>
 
 <div class="nav-bar">
 		<ul class="nav">
