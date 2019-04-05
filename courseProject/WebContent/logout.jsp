@@ -7,6 +7,7 @@
 <title>logout page</title>
 </head>
 <body>
+	<%--logs out the user and redirects them to the login page--%>
 <%
 	session.invalidate();
 	response.sendRedirect("login.jsp");
