@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="login.css" type="text/css">
 
 <div id="container">
+	<%--allows user to check out the selected books--%>
 
 	<body>
 		<div id="header">
