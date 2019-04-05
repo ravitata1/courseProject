@@ -1,3 +1,4 @@
+//package and import statements
 package domain.login;
 
 import java.sql.Connection;
@@ -10,12 +11,15 @@ import db.DbManager;
 
 public class CustomerDaoImpl implements CustomerDao {
 
+	//establishes database and connection
 	static Connection conn;
 	static PreparedStatement ps;
 	DbManager db = new DbManager();
 	
+	//registers customer into the database
 	@Override
 	public int register(Customer c) {
+		//0 means unregisteres
 		int status = 0;
 		try{
 			conn = db.getConnection();
@@ -25,13 +29,16 @@ public class CustomerDaoImpl implements CustomerDao {
 			ps.setString(3, c.getName());
 			status = ps.executeUpdate();
 			conn.close();
-		}catch(Exception e){
+		}
+		//in case registration is unsuccessful
+		catch(Exception e){
 			System.out.println(e);
 		}
 		return status;
 	}
 
 	@Override
+	//validates login credentials
 	public Customer validateCustomer(Login login) {
 		Customer c = new Customer();
 		try{
@@ -47,7 +54,9 @@ public class CustomerDaoImpl implements CustomerDao {
 				c.setName(rs.getString(3));
 			}
 			conn.close();
-		}catch(Exception e){
+		}
+		//if invalid login credentials
+		catch(Exception e){
 			System.out.println(e);
 		}
 		return c;
