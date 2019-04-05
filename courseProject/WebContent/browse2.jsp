@@ -36,7 +36,7 @@
 		</nav>
 		
 		
-		
+		<%--displays books in database--%>
 <table border="1" align="center" width="70%">
 	<tr> <br>
 		<td><img class="resize" src="https://img.buzzfeed.com/buzzfeed-static/static/enhanced/webdr01/2013/3/25/12/enhanced-buzz-23705-1364227511-13.jpg?output-quality=auto&output-format=auto&downsize=360:*" alt="">
